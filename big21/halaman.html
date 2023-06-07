@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Halaman Utama</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+    }
+    
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+    
+    .container h2 {
+      margin-bottom: 20px;
+    }
+    
+    .container form {
+      margin-bottom: 20px;
+    }
+    
+    .container input[type="text"] {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    
+    .container input[type="submit"] {
+      padding: 10px 20px;
+      background-color: #4caf50;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    
+    .container input[type="submit"]:hover {
+      background-color: #45a049;
+    }
+    
+    .container table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    
+    .container table th, .container table td {
+      padding: 8px;
+      border-bottom: 1px solid #ddd;
+    }
+    
+    .container table th {
+      background-color: #f2f2f2;
+    }
+    
+    .container .logout-btn {
+      padding: 10px 20px;
+      background-color: #f44336;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    
+    .container .logout-btn:hover {
+      background-color: #d32f2f;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Halaman Utama</h2>
+    
+    <!-- Form input data cutting dies -->
+    <form>
+      <input type="text" name="nama" placeholder="Nama Cutting Dies" required><br>
+      <input type="text" name="jenis" placeholder="Jenis Cutting Dies" required><br>
+      <input type="submit" value="Simpan">
+    </form>
+    
+    <!-- Tabel untuk menampilkan hasil input -->
+    <h2>Hasil Input</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Nama</th>
+          <th>Jenis</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Data hasil input akan ditampilkan di sini -->
+      </tbody>
+    </table>
+    
+    <!-- Tombol Logout -->
+    <button class="logout-btn" onclick="logout()">Logout</button>
+  </div>
+  
+  <script>
+    // Fungsi logout untuk mengarahkan ke halaman logout
+    function logout() {
+      window.location.href = "logout.html";
+    }
+  </script>
+</body>
+</html>

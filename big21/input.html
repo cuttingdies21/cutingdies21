@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Input Data Cutting Dies</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+    }
+    
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+    
+    .container h2 {
+      margin-bottom: 20px;
+    }
+    
+    .container form {
+      text-align: left;
+    }
+    
+    .container form label {
+      display: block;
+      margin-bottom: 5px;
+    }
+    
+    .container form input[type="text"],
+    .container form input[type="date"],
+    .container form input[type="number"] {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    
+    .container form input[type="submit"] {
+      padding: 10px 20px;
+      background-color: #4caf50;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    
+    .container form input[type="submit"]:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Input Data Cutting Dies</h2>
+    <form>
+      <label for="nama_model">Nama Model:</label>
+      <input type="text" id="nama_model" name="nama_model" required>
+      
+      <label for="nama_komponen">Nama Komponen:</label>
+      <input type="text" id="nama_komponen" name="nama_komponen" required>
+      
+      <label for="jumlah">Jumlah:</label>
+      <input type="number" id="jumlah" name="jumlah" required>
+      
+      <label for="tanggal_input">Tanggal Input:</label>
+      <input type="date" id="tanggal_input" name="tanggal_input" required>
+      
+      <input type="submit" value="Submit">
+    </form>
+  </div>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Hasil Input Data Cutting Dies</title>
+  <style>
+    /* Gaya CSS Anda di sini */
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Hasil Input Data Cutting Dies</h2>
+    
+    <table>
+      <thead>
+        <tr>
+          <th>Nama Model</th>
+          <th>Nama Komponen</th>
+          <th>Jumlah</th>
+          <th>Tanggal Input</th>
+        </tr>
+      </thead>
+      <tbody>
+        <?php
+        // Ambil data dari database atau sumber data lainnya
+        // Contoh: Menampilkan data statis
+        $data = array(
+          array('Model A', 'Komponen X', 10, '2023-06-07'),
+          array('Model B', 'Komponen Y', 5, '2023-06-08')
+        );
+
+        // Tampilkan data ke dalam tabel
+        foreach ($data as $row) {
+          echo '<tr>';
+          echo '<td>' . $row[0] . '</td>';
+          echo '<td>' . $row[1] . '</td>';
+          echo '<td>' . $row[2] . '</td>';
+          echo '<td>' . $row[3] . '</td>';
+          echo '</tr>';
+        }
+        ?>
+      </tbody>
+    </table>
+  </div>
+</body>
+</html>
